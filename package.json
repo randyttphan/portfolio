@@ -1,0 +1,22 @@
+{
+  "name": "responsive-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/randyttphan/responsive-portfolio.git"
+  },
+  "author": "Randy Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/randyttphan/responsive-portfolio/issues"
+  },
+  "homepage": "https://github.com/randyttphan/responsive-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
