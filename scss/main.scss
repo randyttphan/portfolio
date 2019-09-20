@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   //padding or margin isn't gonna effect the height or width
@@ -29,8 +30,8 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.3);
+    padding: 0.2rem 0;
+    font-style: italic;
   }
 }
 
