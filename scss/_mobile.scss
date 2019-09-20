@@ -45,6 +45,16 @@
       height: 120px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2";
+
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smart phones

@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   //padding or margin isn't gonna effect the height or width
@@ -10,7 +9,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +30,6 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0;
-    font-style: italic;
   }
 }
 
@@ -52,7 +50,12 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  // height: 100%;
+  // once the content of main is 100% which could be short, the footer could end up in the middle of the page
+  // if content doesnt go all the way down.
+
+  //to do a sticky footer, we calculate 100 view port height and minus the size the the footer which is 60px.
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -74,3 +77,51 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio"
+    "job1 job2";
+  grid-template-columns: repeat(2, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+    width: 200px;
+    height: 200px;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .job1 {
+    grid-area: job1;
+  }
+
+  .job2 {
+    grid-area: job2;
+  }
+
+  .job {
+    background: lighten($primary-color, 6);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 5);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+//initiate this last
+@import "mobile";
