@@ -48,6 +48,10 @@ header {
   color: $secondary-color;
 }
 
+.third-color {
+  color: $secondary-color;
+}
+
 main {
   padding: 4rem;
   // height: 100%;
@@ -78,6 +82,10 @@ main {
   }
 }
 
+.about-heading {
+  text-align: center;
+}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -85,6 +93,7 @@ main {
     "bioimage bio"
     "job1 job2";
   grid-template-columns: repeat(2, 1fr);
+  font-family: Optima;
 
   .bio-image {
     grid-area: bioimage;
@@ -97,14 +106,15 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
   }
 
-  .job1 {
+  .job-1 {
     grid-area: job1;
   }
 
-  .job2 {
+  .job-2 {
     grid-area: job2;
   }
 
@@ -112,6 +122,50 @@ main {
     background: lighten($primary-color, 6);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+    text-align: center;
+  }
+}
+
+// Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+
+.btn-light {
+  @extend .btn;
+  background: lighten(#333, 50);
+}
+
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
   }
 }
 
