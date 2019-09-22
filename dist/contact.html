@@ -51,10 +51,35 @@
     </header>
 
     <main id="contact">
-      <h1 class="lg-heading">Contact Me</h1>
-      <h6>Have a question or want to work together?</h6>
-      <div class="boxes">
-        <span class="text-secondary">Email:</span> randyttphan@gmail.com
+      <h1 class="work-heading">Contact Me</h1>
+      <hr class="hr-line" />
+
+      <div class="container">
+        <form action="action_page.php">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            class="input"
+          />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            class="input "
+          />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Your Message"
+            style="height:100px"
+            class="input"
+          ></textarea>
+
+          <input type="submit" value="Submit" class="btn-submit" />
+        </form>
       </div>
     </main>
 
