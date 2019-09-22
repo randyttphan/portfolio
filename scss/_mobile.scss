@@ -59,6 +59,18 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #contact {
+    padding: 4rem;
+  }
+
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 2px;
+    border: 1px #fff solid;
+    background-color: lighten($color: $primary-color, $amount: 50);
+  }
 }
 
 // Smart phones
