@@ -212,7 +212,7 @@ form {
     background-color: lighten($color: $primary-color, $amount: 50);
     color: $primary-color;
     transition: background 500ms ease;
-
+    //hover over btn
     &:hover {
       background: #fff;
     }
