@@ -1,21 +1,21 @@
 {
-  "name": "portfolio",
+  "name": "responsive-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://randyttphan.github.io/portfolio",
+  "homepage": "https://randyttphan.github.io/responsive-portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/randyttphan/portfolio.git"
+    "url": "git+https://github.com/randyttphan/responsive-portfolio.git"
   },
   "author": "Randy Phan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/randyttphan/portfolio/issues"
+    "url": "https://github.com/randyttphan/responsive-portfolio/issues"
   },
   "dependencies": {
     "gh-pages": "^2.1.1",
