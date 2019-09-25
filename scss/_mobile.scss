@@ -74,4 +74,24 @@
   .projects {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .about-info {
+    display: grid;
+    grid-template-areas:
+      "bio"
+      "job1";
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main {
+    padding: 2.5rem;
+  }
+
+  form .input {
+    width: 100%;
+  }
+
+  form .btn-submit {
+    width: 70%;
+  }
 }

@@ -195,17 +195,18 @@ form {
   align-items: center;
 
   .input {
-    width: 100%;
+    width: 40%;
     padding: 0.5rem;
     margin: 2px;
     border: 1px #fff solid;
     background-color: lighten($color: $primary-color, $amount: 50);
+    border-radius: 2px;
   }
 
   .btn-submit {
     margin: 10px;
     padding: 10px;
-    width: 35%;
+    width: 25%;
     text-transform: uppercase;
     border: 1px #fff solid;
     border-radius: 20px;
