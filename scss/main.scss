@@ -110,7 +110,7 @@ main {
   .bio-image {
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: rgb(201, 201, 201) 3px solid;
     width: 200px;
     height: 200px;
   }
@@ -128,7 +128,7 @@ main {
   .job {
     background: lighten($primary-color, 6);
     padding: 2.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: rgb(201, 201, 201) 5px solid;
     text-align: center;
   }
 
@@ -136,6 +136,7 @@ main {
     width: 100px;
     height: 100px;
     padding: 1rem;
+    opacity: 0.75;
   }
 
   .js-logo {
