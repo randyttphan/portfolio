@@ -234,6 +234,10 @@ main {
       border-color: #c5c5c5;
       transition: all 0.6s ease-out; }
 
+.resume-link {
+  font-size: 14px;
+  text-decoration: underline; }
+
 form {
   display: flex;
   justify-content: center;
