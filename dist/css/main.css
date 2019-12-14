@@ -169,47 +169,6 @@ main {
   display: flex;
   justify-content: space-around; }
 
-.about-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5rem; }
-
-.work-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5rem; }
-
-.about-info {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-areas: "bio job1";
-  grid-template-columns: repeat(2, 1fr);
-  font-family: "Roboto", sans-serif; }
-  .about-info .bio-image {
-    margin: auto;
-    border-radius: 50%;
-    border: #c9c9c9 3px solid;
-    width: 200px;
-    height: 200px; }
-  .about-info .bio {
-    grid-area: bio;
-    font-size: 1.2rem;
-    text-align: center; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job {
-    background: #555555;
-    padding: 2.5rem;
-    border-bottom: #c9c9c9 5px solid;
-    text-align: center; }
-  .about-info .logo {
-    width: 100px;
-    height: 100px;
-    padding: 1rem;
-    opacity: 0.75; }
-  .about-info .js-logo {
-    border-radius: 50%; }
-
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -226,58 +185,6 @@ main {
 
 .btn-light {
   background: #b3b3b3; }
-
-.projects {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #c5c5c5;
-      transition: all 0.6s ease-out; }
-
-.resume-link {
-  font-size: 14px;
-  text-decoration: underline; }
-
-h6 {
-  text-align: center;
-  font-style: italic; }
-
-Contact form form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-  Contact form form .input {
-    width: 40%;
-    padding: 0.5rem;
-    margin: 2px;
-    border: 1px #fff solid;
-    background-color: #c6c6c6;
-    border-radius: 2px; }
-  Contact form form .btn-submit {
-    margin: 10px;
-    padding: 10px;
-    width: 25%;
-    text-transform: uppercase;
-    border: 1px #fff solid;
-    border-radius: 20px;
-    background-color: #c6c6c6;
-    color: #464646;
-    transition: background 500ms ease; }
-    Contact form form .btn-submit:hover {
-      background: #fff; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #393939;
-  color: #fff;
-  height: 60px; }
 
 @media screen and (max-width: 768px) {
   main {

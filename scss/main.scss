@@ -96,62 +96,6 @@ main {
   justify-content: space-around;
 }
 
-.about-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-}
-
-.work-heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-}
-
-.about-info {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-areas: "bio job1";
-  grid-template-columns: repeat(2, 1fr);
-  font-family: "Roboto", sans-serif;
-
-  .bio-image {
-    margin: auto;
-    border-radius: 50%;
-    border: rgb(201, 201, 201) 3px solid;
-    width: 200px;
-    height: 200px;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job {
-    background: lighten($primary-color, 6);
-    padding: 2.5rem;
-    border-bottom: rgb(201, 201, 201) 5px solid;
-    text-align: center;
-  }
-
-  .logo {
-    width: 100px;
-    height: 100px;
-    padding: 1rem;
-    opacity: 0.75;
-  }
-
-  .js-logo {
-    border-radius: 50%;
-  }
-}
-
 // Button Styles
 .btn {
   display: block;
@@ -175,74 +119,6 @@ main {
 .btn-light {
   @extend .btn;
   background: lighten(#333, 50);
-}
-
-// Work/Projects
-.projects {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-}
-
-.resume-link {
-  font-size: 14px;
-  text-decoration: underline;
-}
-
-h6 {
-  text-align: center;
-  font-style: italic;
-}
-
-Contact form form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  .input {
-    width: 40%;
-    padding: 0.5rem;
-    margin: 2px;
-    border: 1px #fff solid;
-    background-color: lighten($color: $primary-color, $amount: 50);
-    border-radius: 2px;
-  }
-
-  .btn-submit {
-    margin: 10px;
-    padding: 10px;
-    width: 25%;
-    text-transform: uppercase;
-    border: 1px #fff solid;
-    border-radius: 20px;
-    background-color: lighten($color: $primary-color, $amount: 50);
-    color: $primary-color;
-    transition: background 500ms ease;
-    //hover over btn
-    &:hover {
-      background: #fff;
-    }
-  }
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 5);
-  color: set-text-color($primary-color);
-  height: 60px;
 }
 
 //initiate this last
