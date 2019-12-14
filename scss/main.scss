@@ -1,5 +1,4 @@
 @import "config";
-@import "menu";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
@@ -9,7 +8,7 @@
 }
 
 body {
-  background: $secondary-color;
+  background-color: #eee;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -53,6 +52,13 @@ a {
   color: #fff;
   text-decoration: none;
 }
+.resume-link {
+  color: rgb(19, 19, 19);
+}
+
+.bio p {
+  margin-bottom: 2.4rem;
+}
 
 header {
   position: fixed;
@@ -65,7 +71,7 @@ header {
 }
 
 .third-color {
-  color: $secondary-color;
+  color: rgb(91, 148, 233);
 }
 
 main {
@@ -88,12 +94,61 @@ main {
 }
 
 .nav-bar {
-  background-color: #000;
+  background-color: darken($primary-color, 50);
   padding: 12px;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   justify-content: space-around;
+}
+
+//About section
+#about-heading,
+#work-heading,
+#contact-heading {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.7rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  opacity: 0.85;
+}
+
+.js-logo {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.hr-line {
+  width: 4%;
+  margin: auto;
+  border: darken($primary-color, 5) 1px solid;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas: "bio job1";
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Roboto", sans-serif;
+  padding: 1.3rem 5rem;
+
+  .bio {
+    grid-area: bio;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .job1 {
+    grid-area: job1;
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 // Button Styles
@@ -119,6 +174,68 @@ main {
 .btn-light {
   @extend .btn;
   background: lighten(#333, 50);
+}
+
+// Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+
+  .input {
+    width: 40%;
+    padding: 0.5rem;
+    margin: 2px;
+    border: 1px #fff solid;
+    background-color: lighten($color: $primary-color, $amount: 50);
+    border-radius: 2px;
+  }
+
+  .btn-submit {
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    background-color: lighten($color: $primary-color, $amount: 50);
+    color: $primary-color;
+    transition: background 500ms ease;
+    //hover over btn
+    &:hover {
+      background: darken($primary-color, 5);
+      color: #fff;
+    }
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 50);
+  color: set-text-color($primary-color);
+  height: 60px;
+  margin-top: 4rem;
 }
 
 //initiate this last
