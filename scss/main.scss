@@ -3,14 +3,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
-  //padding or margin isn't gonna effect the height or width
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
+  background: $secondary-color;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -24,14 +23,30 @@ h3 {
   margin: 0;
   font-weight: 400;
 
-  &.lg-heading {
-    font-size: 4.5rem;
-  }
-
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0;
   }
+}
+
+.blast {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.blast:hover {
+  color: rgb(91, 148, 233);
+  @include easeOut();
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.space {
+  margin-right: 1.6rem;
+}
+
+.container {
+  margin-top: 8rem;
 }
 
 a {
@@ -54,13 +69,9 @@ header {
 }
 
 main {
+  @include background;
   padding: 4rem;
-  // height: 100%;
-  // once the content of main is 100% which could be short, the footer could end up in the middle of the page
-  // if content doesnt go all the way down.
-
-  //to do a sticky footer, we calculate 100 view port height and minus the size the the footer which is 60px.
-  min-height: calc(100vh - 60px);
+  height: 100vh;
 
   .icons {
     margin-top: 1rem;
@@ -69,18 +80,20 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: $secondary-color;
+        color: rgb(91, 148, 233);
         @include easeOut();
       }
     }
   }
+}
 
-  &#home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-  }
+.nav-bar {
+  background-color: #000;
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .about-heading {
@@ -93,11 +106,6 @@ main {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-}
-
-.hr-line {
-  width: 7%;
-  margin-bottom: 5rem;
 }
 
 .about-info {
@@ -197,9 +205,7 @@ h6 {
   font-style: italic;
 }
 
-// Contact Form
-
-form {
+Contact form form {
   display: flex;
   justify-content: center;
   flex-direction: column;

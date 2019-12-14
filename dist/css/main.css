@@ -92,43 +92,43 @@
   transition-delay: 0.4s; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
-  background: #464646;
-  color: #fff;
+  background: #c5c5c5;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background.jpg) center/cover;
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(70, 70, 70, 0.7); }
 
 h1,
 h2,
 h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 4.5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0; }
+
+.blast {
+  font-size: 4.5rem;
+  color: #fff; }
+
+.blast:hover {
+  color: #5b94e9;
+  transition: all 0.6s ease-out;
+  animation-name: pulse;
+  animation-duration: 1s; }
+
+.space {
+  margin-right: 1.6rem; }
+
+.container {
+  margin-top: 8rem; }
 
 a {
   color: #fff;
@@ -147,18 +147,27 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  height: 100vh; }
+  main#home {
+    background: url(../img/background3.jpg) center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    opacity: 0.9; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #c5c5c5;
+        color: #5b94e9;
         transition: all 0.6s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+
+.nav-bar {
+  background-color: #000;
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
 
 .about-heading {
   text-align: center;
@@ -169,10 +178,6 @@ main {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem; }
-
-.hr-line {
-  width: 7%;
-  margin-bottom: 5rem; }
 
 .about-info {
   display: grid;
@@ -242,19 +247,19 @@ h6 {
   text-align: center;
   font-style: italic; }
 
-form {
+Contact form form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center; }
-  form .input {
+  Contact form form .input {
     width: 40%;
     padding: 0.5rem;
     margin: 2px;
     border: 1px #fff solid;
     background-color: #c6c6c6;
     border-radius: 2px; }
-  form .btn-submit {
+  Contact form form .btn-submit {
     margin: 10px;
     padding: 10px;
     width: 25%;
@@ -264,7 +269,7 @@ form {
     background-color: #c6c6c6;
     color: #464646;
     transition: background 500ms ease; }
-    form .btn-submit:hover {
+    Contact form form .btn-submit:hover {
       background: #fff; }
 
 #main-footer {

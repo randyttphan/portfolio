@@ -1,9 +1,8 @@
 $primary-color: rgb(70, 70, 70);
 $secondary-color: #c5c5c5;
 $show-home-image: true;
-// $home-image: url(../img/background2.jpg) center/cover;
-$home-image: url(../img/background.jpg) center/cover;
-$background-opacity: 0.7;
+$home-image: url(../img/background3.jpg) center/cover;
+$background-opacity: 0.5;
 
 @mixin easeOut {
   transition: all 0.6s ease-out;
@@ -11,21 +10,11 @@ $background-opacity: 0.7;
 
 @mixin background {
   @if $show-home-image {
-    &#bg-img {
+    &#home {
       background: $home-image;
       background-attachment: fixed;
-      background-size: cover;
-
-      &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
+      width: 100%;
+      opacity: 0.9;
     }
   }
 }
