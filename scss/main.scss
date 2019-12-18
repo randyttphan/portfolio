@@ -8,12 +8,28 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: rgb(236, 236, 236);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
+
+// .menu-btn {
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   @include easeOut;
+
+//   .btn-line {
+//     width: 30px;
+//     height: 1.5px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background: #fff;
+//     @include easeOut;
+//   }
+// }
 
 // Headings
 h1,
@@ -109,7 +125,7 @@ main {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin: 1.7rem;
+  margin-top: 3rem;
 }
 
 .logo {
@@ -177,6 +193,11 @@ main {
 }
 
 // Work/Projects
+.work-container {
+  background-color: lighten(#333, 30);
+  padding-top: 0.5rem;
+}
+
 .projects {
   display: grid;
   grid-gap: 2rem;

@@ -15,9 +15,11 @@
   </head>
 
   <body>
-    <header></header>
-
     <main id="home">
+      <!-- <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div> -->
       <div class="container">
         <span class="blast">R</span>
         <span class="blast">a</span>
@@ -47,74 +49,89 @@
         </a>
       </div>
     </main>
-
+    <!-- 
     <div class="nav-bar">
       <a href="#" class="w3-bar-item w3-button">About Me</a>
       <a href="#" class="w3-bar-item w3-button">My Work</a>
       <a href="#" class="w3-bar-item w3-button">Contact Me</a>
+    </div> -->
+
+    <div class="about-container">
+      <h1 id="about-heading">
+        About
+      </h1>
+
+      <hr class="hr-line" />
+
+      <div class="about-info">
+        <div class="bio">
+          <p>
+            Hi, my name is Randy and I'm an aspiring front-end web developer
+            based in Memphis, TN. After graduating, I have been studying a lot
+            into web technologies and am certain that I have the necessary
+            skills and mindset to build great things.
+          </p>
+          <a href="img/Resume.pdf" target="_blank" class="resume-link"
+            ><em>Click here to take a look at my resume!</em></a
+          >
+        </div>
+
+        <div class="job1">
+          <p><em>Languages I speak and developer tools I use:</em></p>
+          <img src="img/html.png" alt="html" class="logo" />
+          <img src="img/css.png" alt="html" class="logo" />
+          <img src="img/js.png" alt="html" class="logo js-logo" />
+          <img src="img/git.png" alt="html" class="logo" />
+          <img src="img/visual-studio-code.svg" alt="html" class="logo" />
+          <img src="img/terminal.svg" alt="html" class="logo" />
+        </div>
+      </div>
+      <!-- about info-->
     </div>
+    <!-- about container-->
 
-    <h1 id="about-heading">
-      About
-    </h1>
+    <div class="work-container">
+      <h1 id="work-heading">My Work</h1>
+      <hr class="hr-line" />
 
-    <hr class="hr-line" />
-
-    <div class="about-info">
-      <div class="bio">
-        <p>
-          Hi, my name is Randy and I'm an aspiring front-end web developer based
-          in Memphis, TN. After graduating, I have been studying a lot into web
-          technologies and am certain that I have the necessary skills and
-          mindset to build great things.
-        </p>
-        <a href="img/Resume.pdf" target="_blank" class="resume-link"
-          ><em>Click here to take a look at my resume!</em></a
-        >
+      <div class="projects">
+        <div class="item">
+          <a href="#!">
+            <img src="img/projects/project4.jpg" alt="Project" />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="img/projects/project3.jpg" alt="Project 2" />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <img src="img/projects/project2.jpg" alt="Project 3" />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fab fa-github"></i> Github
+          </a>
+        </div>
+        <!-- end of item div-->
       </div>
-
-      <div class="job1">
-        <p><em>Languages I speak and developer tools I use:</em></p>
-        <img src="img/html.png" alt="html" class="logo" />
-        <img src="img/css.png" alt="html" class="logo" />
-        <img src="img/js.png" alt="html" class="logo js-logo" />
-        <img src="img/git.png" alt="html" class="logo" />
-        <img src="img/visual-studio-code.svg" alt="html" class="logo" />
-        <img src="img/terminal.svg" alt="html" class="logo" />
-      </div>
+      <!-- end of projects div -->
     </div>
-
-    <h1 id="work-heading">My Work</h1>
-    <hr class="hr-line" />
-
-    <div class="projects">
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project4.jpg" alt="Project" />
-        </a>
-        <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-        <a href="#" class="btn-dark"> <i class="fab fa-github"></i> Github </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project 2" />
-        </a>
-        <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-        <a href="#" class="btn-dark"> <i class="fab fa-github"></i> Github </a>
-      </div>
-      <div class="item">
-        <a href="#!">
-          <img src="img/projects/project2.jpg" alt="Project 3" />
-        </a>
-        <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-        <a href="#" class="btn-dark"> <i class="fab fa-github"></i> Github </a>
-      </div>
-    </div>
-
-    <h1 id="contact-heading">Contact Me</h1>
-    <hr class="hr-line" />
+    <!-- end of work container-->
 
     <div class="container2">
+      <h1 id="contact-heading">Contact Me</h1>
+      <hr class="hr-line" />
+
       <form action="index.html">
         <input
           type="text"
