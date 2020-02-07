@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Welcome To My Portfolio</title>
   </head>
 
@@ -32,7 +33,7 @@
         <span class="blast">n</span>
       </div>
       <h2 class="sm-heading">
-        <em class="third-color">Front-End Web Developer</em>
+        <em>Front-End Web Developer</em>
       </h2>
       <div class="icons">
         <a href="https://www.instagram.com/randythangg/" target="_blank">
@@ -48,15 +49,13 @@
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
       </div>
-    </main>
-    <!-- 
-    <div class="nav-bar">
-      <a href="#" class="w3-bar-item w3-button">About Me</a>
-      <a href="#" class="w3-bar-item w3-button">My Work</a>
-      <a href="#" class="w3-bar-item w3-button">Contact Me</a>
-    </div> -->
 
-    <div class="about-container">
+      <a href="#about" id="view-about"
+        ><i class="fas fa-angle-down arrow"></i
+      ></a>
+    </main>
+
+    <div class="about-container" id="about">
       <h1 id="about-heading">
         About
       </h1>
@@ -68,12 +67,12 @@
           <p>
             Hi, my name is Randy and I'm an aspiring front-end web developer
             based in Memphis, TN. After graduating, I have been studying a lot
-            into web technologies and am certain that I have the necessary
+            into web technologies and am confident that I have the necessary
             skills and mindset to build great things.
           </p>
-          <a href="img/Resume.pdf" target="_blank" class="resume-link"
-            ><em>Click here to take a look at my resume!</em></a
-          >
+          <a class="resume-link" href="img/Resume.pdf" target="_blank">
+            Resume
+          </a>
         </div>
 
         <div class="job1">
@@ -147,7 +146,7 @@
     </div>
     <!-- end of work container-->
 
-    <div class="container2">
+    <div class="contact-container">
       <h1 id="contact-heading">Contact Me</h1>
       <hr class="hr-line" />
 
@@ -190,6 +189,11 @@
       &copy; 2019, Randy Phan.
     </footer>
 
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
   </body>
 </html>

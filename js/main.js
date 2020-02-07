@@ -1,33 +1,17 @@
-// Select DOM Items
-const menuBtn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".menu");
-const menuNav = document.querySelector(".menu-nav");
-const menuBranding = document.querySelector(".menu-branding");
-const navItems = document.querySelectorAll(".nav-item");
+//Animate Smooth using smooth scroll (jquery)
+$("#view-about").on("click", function() {
+  const images = $("#about").position().top;
 
-// Set Initial State of Menu
-let showMenu = false;
+  $("html, body").animate(
+    {
+      scrollTop: images
+    },
+    900
+  );
+});
 
-menuBtn.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-  if (!showMenu) {
-    menuBtn.classList.add("close");
-    menu.classList.add("show");
-    menuNav.classList.add("show");
-    menuBranding.classList.add("show");
-    navItems.forEach(item => item.classList.add("show"));
-
-    //Set Menu State
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove("close");
-    menu.classList.remove("show");
-    menuNav.classList.remove("show");
-    menuBranding.classList.remove("show");
-    navItems.forEach(item => item.classList.remove("show"));
-
-    //Set Menu State
-    showMenu = false;
-  }
-}
+//JS
+const submitButton = document.getElementById("submit-btn");
+submitButton.addEventListener("click", function() {
+  alert("Submission has not been sent. Functionality is used for UI purposes.");
+});
