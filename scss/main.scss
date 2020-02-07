@@ -25,6 +25,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0;
+    color: #348ed3;
   }
 }
 
@@ -109,10 +110,6 @@ header {
   color: $secondary-color;
 }
 
-.third-color {
-  color: #348ed3;
-}
-
 main {
   @include background;
   padding: 4rem;
@@ -148,7 +145,12 @@ main {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 3rem;
+}
+
+.about-container,
+.work-container,
+.contact-container {
+  padding: 2rem;
 }
 
 .logo {
@@ -222,7 +224,7 @@ main {
 // Work/Projects
 .work-container {
   background-color: lighten(#333, 35);
-  padding-top: 0.5rem;
+  margin-top: 4rem;
 }
 
 .projects {
@@ -258,6 +260,7 @@ form {
     border: 1px #fff solid;
     background-color: lighten($color: $primary-color, $amount: 50);
     border-radius: 2px;
+    outline: none;
   }
 
   .btn-submit {
@@ -271,6 +274,7 @@ form {
     background-color: lighten($color: $primary-color, $amount: 50);
     color: $primary-color;
     transition: background 500ms ease;
+    outline: none;
     //hover over btn
     &:hover {
       background: darken($primary-color, 5);
