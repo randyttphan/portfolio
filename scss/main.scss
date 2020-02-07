@@ -34,7 +34,7 @@ h3 {
 }
 
 .blast:hover {
-  color: rgb(91, 148, 233);
+  color: #348ed3;
   @include easeOut();
   animation-name: pulse;
   animation-duration: 1s;
@@ -53,6 +53,20 @@ a {
   text-decoration: none;
 }
 
+.arrow {
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.arrow:hover {
+  color: #348ed3;
+  cursor: pointer;
+}
+
 .resume-link {
   font-size: 13px;
   font-weight: 600;
@@ -62,7 +76,7 @@ a {
   background-color: #fff;
   color: black;
   padding: 10px 30px;
-  border: solid 2px rgb(91, 148, 233);
+  border: solid 2px #348ed3;
   border-radius: 30px;
   transition: background-color 0.5s ease;
   display: flex;
@@ -72,19 +86,13 @@ a {
 }
 
 .resume-link:hover {
-  background-color: rgb(91, 148, 233);
+  background-color: #348ed3;
   color: rgb(236, 236, 236);
   cursor: pointer;
 }
 
 .resume-link:focus {
   outline: none;
-}
-
-.portrait {
-  width: 230px;
-  height: 240px;
-  border-radius: 50%;
 }
 
 .bio p {
@@ -102,7 +110,7 @@ header {
 }
 
 .third-color {
-  color: rgb(91, 148, 233);
+  color: #348ed3;
 }
 
 main {
@@ -117,21 +125,21 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: rgb(91, 148, 233);
+        color: #348ed3;
         @include easeOut();
       }
     }
   }
 }
 
-.nav-bar {
-  background-color: darken($primary-color, 50);
-  padding: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
+// .nav-bar {
+//   background-color: darken($primary-color, 50);
+//   padding: 12px;
+//   text-transform: uppercase;
+//   text-align: center;
+//   display: flex;
+//   justify-content: space-around;
+// }
 
 //About section
 #about-heading,
@@ -170,6 +178,10 @@ main {
   padding: 1.3rem 5rem;
 
   .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: bio;
     text-align: center;
     padding: 1rem;
@@ -209,7 +221,7 @@ main {
 
 // Work/Projects
 .work-container {
-  background-color: lighten(#333, 30);
+  background-color: lighten(#333, 35);
   padding-top: 0.5rem;
 }
 
@@ -253,6 +265,7 @@ form {
     padding: 10px;
     width: 25%;
     text-transform: uppercase;
+    cursor: pointer;
     border: 1px #fff solid;
     border-radius: 20px;
     background-color: lighten($color: $primary-color, $amount: 50);

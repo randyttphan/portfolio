@@ -27,7 +27,7 @@ h3 {
   color: #fff; }
 
 .blast:hover {
-  color: #5b94e9;
+  color: #348ed3;
   transition: all 0.6s ease-out;
   animation-name: pulse;
   animation-duration: 1s; }
@@ -42,6 +42,18 @@ a {
   color: #fff;
   text-decoration: none; }
 
+.arrow {
+  font-size: 60px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transition: color 0.5s ease; }
+
+.arrow:hover {
+  color: #348ed3;
+  cursor: pointer; }
+
 .resume-link {
   font-size: 13px;
   font-weight: 600;
@@ -51,7 +63,7 @@ a {
   background-color: #fff;
   color: black;
   padding: 10px 30px;
-  border: solid 2px #5b94e9;
+  border: solid 2px #348ed3;
   border-radius: 30px;
   transition: background-color 0.5s ease;
   display: flex;
@@ -60,17 +72,12 @@ a {
   width: 30%; }
 
 .resume-link:hover {
-  background-color: #5b94e9;
+  background-color: #348ed3;
   color: #ececec;
   cursor: pointer; }
 
 .resume-link:focus {
   outline: none; }
-
-.portrait {
-  width: 230px;
-  height: 240px;
-  border-radius: 50%; }
 
 .bio p {
   margin-bottom: 2.4rem; }
@@ -84,7 +91,7 @@ header {
   color: #c5c5c5; }
 
 .third-color {
-  color: #5b94e9; }
+  color: #348ed3; }
 
 main {
   padding: 4rem;
@@ -99,16 +106,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #5b94e9;
+        color: #348ed3;
         transition: all 0.6s ease-out; }
-
-.nav-bar {
-  background-color: black;
-  padding: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  justify-content: space-around; }
 
 #about-heading,
 #work-heading,
@@ -141,6 +140,10 @@ main {
   font-family: "Roboto", sans-serif;
   padding: 1.3rem 5rem; }
   .about-info .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: bio;
     text-align: center;
     padding: 1rem; }
@@ -167,7 +170,7 @@ main {
   background: #b3b3b3; }
 
 .work-container {
-  background-color: gray;
+  background-color: #8c8c8c;
   padding-top: 0.5rem; }
 
 .projects {
@@ -202,6 +205,7 @@ form {
     padding: 10px;
     width: 25%;
     text-transform: uppercase;
+    cursor: pointer;
     border: 1px #fff solid;
     border-radius: 20px;
     background-color: #c6c6c6;
