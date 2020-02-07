@@ -275,7 +275,6 @@ form {
     color: $primary-color;
     transition: background 500ms ease;
     outline: none;
-    //hover over btn
     &:hover {
       background: darken($primary-color, 5);
       color: #fff;
