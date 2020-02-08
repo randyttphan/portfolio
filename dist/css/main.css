@@ -233,7 +233,7 @@ form {
     text-align: center;
     background-size: cover; }
     main#home {
-      background: url(../img/background3.jpg);
+      background: none;
       background-attachment: fixed;
       background-size: cover;
       background-color: grey;
@@ -250,7 +250,8 @@ form {
       position: static; }
   .first,
   .last {
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap; }
   .about-info {
     display: flex;
     flex-direction: column;
