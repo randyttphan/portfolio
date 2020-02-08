@@ -21,8 +21,11 @@ $home-image: url(../img/background3.jpg) center/cover;
 @mixin mobileBackground {
   @if $show-home-image {
     &#home {
-      background: $home-image;
+      background: url(../img/background3.jpg);
+      background-attachment: fixed;
       background-size: cover;
+      background-color: grey;
+      background-position: center center;
     }
   }
 }
