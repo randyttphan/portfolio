@@ -241,13 +241,13 @@ form {
     main .container {
       display: flex;
       flex-direction: column;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
     main .arrow {
       font-size: 50px;
       color: #fff;
       transition: color 0.5s ease;
-      position: static;
-      margin-top: 60px; }
+      position: static; }
   .first,
   .last {
     text-align: center; }
