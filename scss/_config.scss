@@ -16,6 +16,14 @@ $home-image: url(../img/background3.jpg) center/cover;
       opacity: 0.9;
     }
   }
+
+  @mixin noBackground {
+    @if $show-home-image {
+      &#home {
+        background: none;
+      }
+    }
+  }
 }
 
 // Setting Text Color
