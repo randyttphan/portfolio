@@ -14,19 +14,31 @@
 // Smart phones
 @include mediaSm {
   main {
+    @include mobileBackground;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-size: cover;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
 
     .arrow {
       font-size: 50px;
       color: #fff;
       transition: color 0.5s ease;
       position: static;
-      margin-top: 80px;
+      margin-top: 60px;
     }
+  }
+
+  .first,
+  .last {
+    text-align: center;
   }
 
   .about-info {

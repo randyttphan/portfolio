@@ -33,9 +33,6 @@ h3 {
   animation-name: pulse;
   animation-duration: 1s; }
 
-.space {
-  margin-right: 1.6rem; }
-
 .container {
   margin-top: 8rem; }
 
@@ -229,18 +226,27 @@ form {
 
 @media screen and (max-width: 500px) {
   main {
-    background: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    background-size: cover; }
+    main#home {
+      background: url(../img/background3.jpg) center/cover;
+      background-size: cover; }
+    main .container {
+      display: flex;
+      flex-direction: column; }
     main .arrow {
       font-size: 50px;
       color: #fff;
       transition: color 0.5s ease;
       position: static;
-      margin-top: 80px; }
+      margin-top: 60px; }
+  .first,
+  .last {
+    text-align: center; }
   .about-info {
     display: flex;
     flex-direction: column;
