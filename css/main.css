@@ -233,7 +233,7 @@ form {
     text-align: center;
     background-size: cover; }
     main#home {
-      background: url(../img/background3.jpg);
+      background: none;
       background-attachment: fixed;
       background-size: cover;
       background-color: grey;
@@ -241,16 +241,17 @@ form {
     main .container {
       display: flex;
       flex-direction: column;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
     main .arrow {
       font-size: 50px;
       color: #fff;
       transition: color 0.5s ease;
-      position: static;
-      margin-top: 60px; }
+      position: static; }
   .first,
   .last {
-    text-align: center; }
+    text-align: center;
+    white-space: nowrap; }
   .about-info {
     display: flex;
     flex-direction: column;
